@@ -1,0 +1,102 @@
+.root {
+    -fx-background-color: #F5F5F5;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.main-container {
+    -fx-background-color: #F5F5F5;
+    -fx-padding: 40;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.titulo {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212121;
+}
+
+.subtitulo {
+    -fx-font-size: 16px;
+    -fx-text-fill: #757575;
+}
+
+.boton-menu {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 14 40;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-min-width: 220px;
+}
+
+.boton-menu:hover { -fx-background-color: #424242; }
+
+.boton-salir, .boton-volver {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9E9E9E;
+    -fx-font-size: 14px;
+    -fx-padding: 10 40;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-border-color: #BDBDBD;
+    -fx-border-radius: 6;
+    -fx-min-width: 220px;
+}
+
+.boton-salir:hover, .boton-volver:hover {
+    -fx-text-fill: #212121;
+    -fx-border-color: #212121;
+}
+
+.panel-juego, .panel-ranking {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 40;
+    -fx-spacing: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 16, 0, 0, 4);
+}
+
+.label-puntuacion { -fx-font-size: 14px; -fx-text-fill: #757575; -fx-font-weight: bold; }
+.label-vidas      { -fx-font-size: 14px; -fx-text-fill: #E53935; -fx-font-weight: bold; }
+
+.label-pregunta {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212121;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-padding: 10 10 20 10;
+}
+
+.boton-opcion {
+    -fx-background-color: #FAFAFA;
+    -fx-text-fill: #212121;
+    -fx-font-size: 15px;
+    -fx-padding: 14 20;
+    -fx-background-radius: 8;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-min-height: 50px;
+}
+
+.boton-opcion:hover {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-border-color: #212121;
+}
+
+.tabla-ranking {
+    -fx-background-color: transparent;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 6;
+}
+
+.tabla-ranking .column-header  { -fx-background-color: #F5F5F5; -fx-font-weight: bold; }
+.tabla-ranking .table-row-cell { -fx-background-color: white; }
+.tabla-ranking .table-row-cell:selected { -fx-background-color: #F5F5F5; -fx-text-fill: #212121; }
+
+.separador { -fx-background-color: #E0E0E0; -fx-pref-height: 1; -fx-max-height: 1; }

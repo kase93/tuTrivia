@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.Region?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.RankingController"
+      styleClass="main-container"
+      stylesheets="@application.css"
+      prefWidth="520" prefHeight="580"
+      alignment="CENTER"
+      spacing="0">
+
+    <VBox styleClass="panel-ranking" alignment="CENTER" spacing="16"
+          prefWidth="460">
+
+        <Label text="Ranking" styleClass="titulo" />
+        <Label text="Mejores puntuaciones" styleClass="subtitulo" />
+
+        <Region styleClass="separador" prefWidth="400" />
+
+        <TableView fx:id="tablaRanking"
+                   styleClass="tabla-ranking"
+                   prefHeight="268"
+                   prefWidth="400">
+            <columns>
+                <TableColumn fx:id="colJugador"
+                             text="Jugador"
+                             prefWidth="270" />
+                <TableColumn fx:id="colPuntuacion"
+                             text="Puntuación"
+                             prefWidth="128" />
+            </columns>
+        </TableView>
+
+        <Button text="← Volver al menú"
+                styleClass="boton-volver"
+                onAction="#volverAlMenu" />
+
+    </VBox>
+
+</VBox>

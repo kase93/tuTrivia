@@ -1,0 +1,27 @@
+# Compilación
+bin/
+target/
+out/
+*.class
+*.jar
+*.log
+
+# Metadatos de Eclipse (rutas absolutas de la máquina local)
+.classpath
+.project
+.settings/
+
+# Otros IDEs
+.idea/
+*.iml
+.vscode/
+nbproject/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Temporales
+*~
+*.bak
+
